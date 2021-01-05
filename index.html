@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample application 01: layout using bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+    <link  rel="stylesheet" href="css/app.css">
+
+</head>
+<body>
+    <header class="bg-success p-2 text-center">This is a header</header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 pt-2">
+                <div class="card text-info">
+                    <div class="card-header">
+                        Top News
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Special news item</h5>
+                        <p class="card-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card text-info mt-2">
+                    <div class="card-header badge-dark">
+                        Prayer Times
+                    </div>
+                    <div class="card-body badge-dark bg-secondary">
+                        <h5 class="card-title">Riyadh Prayer times</h5>
+                        <div class="card-text clearfix">
+                            <dl class="row prayer-times">
+                                <dt class="col-4">Fajr</dt>
+                                <dd class="col-5">05:14 AM</dd>
+
+                                <dt class="col-4">Surise</dt>
+                                <dd class="col-5">06:37 AM</dd>
+
+                                <dt class="col-4">Zohr</dt>
+                                <dd class="col-5">11:56 PM</dd>
+
+                                <dt class="col-4">Asr</dt>
+                                <dd class="col-5">02:55 PM</dd>
+
+                                <dt class="col-4">Maghrib</dt>
+                                <dd class="col-5">05:15 PM</dd>
+
+                                <dt class="col-4">Isha</dt>
+                                <dd class="col-5">06:45 PM</dd>
+
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-9">
+                <div class="row p-4 pb-0">
+                    <form class="form-group w-100">
+                        <div class=" form-row">
+                            <label class="form-label" for="username">User Name</label>
+                            <input type="text" class="form-control" name="username" id="username">
+                        </div>
+                        <div class="form-row">
+                            <label class="form-label" for="application">Application</label>
+                            <select class="form-control form-select" name="application" id="application">
+                                <option selected>Select an application</option>
+                                <option value="RD">Reported Documents</option>
+                            </select>
+                        </div>
+                        <div class="form-row pt-3">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="row search-result p-4 pt-0">
+                    <table class="table">
+                        <caption style="caption-side:top">Search Results</caption>
+                        <thead>
+                            <tr>
+                                <th>Role</th>
+                                <th>Is user role</th>
+                                <th>Is Application role</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th> Role 1</th>
+                                <td><span>&#9989;</span></td>
+                                <td>&#10060;</td>
+                            </tr>
+                            <tr>
+                                <th> Role 2</th>
+                                <td>&#10060;</td>
+                                <td><span>&#9989;</span></td>
+                            </tr>
+                            <tr>
+                                <th> Role 3</th>
+                                <td><span>&#9989;</span></td>
+                                <td><span>&#9989;</span></td>
+                            </tr>
+                            <tr>
+                                <th> Role 4</th>
+                                <td>&#10060;</td>
+                                <td>&#10060;</td>
+                            </tr>
+                            <tr>
+                                <th> Role 4</th>
+                                <td>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" disabled>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" disabled checked>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <nav aria-label="Result table pagination">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center bg-info p-3">This is a footer</footer>
+</body>
+</html>
